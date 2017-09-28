@@ -1,8 +1,10 @@
 <?php
+
 use modele\dao\EtablissementDAO;
 use modele\metier\Etablissement;
 use modele\dao\Bdd;
-require_once __DIR__.'/../../includes/autoload.php';
+
+require_once __DIR__ . '/../../includes/autoload.php';
 Bdd::connecter();
 
 include("includes/_debut.inc.php");
@@ -40,7 +42,7 @@ if ($action == 'demanderModifierEtab') {
     $type = $unEtab->getTypeEtab();
     $civiliteResponsable = $unEtab->getCiviliteResp();
     $nomResponsable = $unEtab->getNomResp();
-    $prenomResponsable = $unEtab->getPrenomResp();          
+    $prenomResponsable = $unEtab->getPrenomResp();
 }
 
 // Initialisations en fonction du mode (création ou modification) 
@@ -110,7 +112,7 @@ echo '
       <tr class="ligneTabNonQuad">
          <td> Téléphone*: </td>
          <td><input type="text" value="' . $tel . '" name="tel" size ="20" 
-         maxlength="10"></td>
+         maxlength="10" placeholder="format : 0XXXXXXXXX"></td>
       </tr>
       <tr class="ligneTabNonQuad">
          <td> E-mail: </td>
