@@ -112,6 +112,9 @@ function verifierDonneesEtabC($id, $nom, $adresseRue, $codePostal, $ville, $tel,
     if ($codePostal != "" && !estUnCp($codePostal)) {
         ajouterErreur('Le code postal doit comporter 5 chiffres');
     }
+    if (!caracalpha($nom)){
+        ajouterErreur('Le Nom doit contenir que des lettres');
+    }
 }
 
 function verifierDonneesEtabM($id, $nom, $adresseRue, $codePostal, $ville, $tel, $nomResponsable) {
@@ -125,9 +128,16 @@ function verifierDonneesEtabM($id, $nom, $adresseRue, $codePostal, $ville, $tel,
     if ($codePostal != "" && !estUnCp($codePostal)) {
         ajouterErreur('Le code postal doit comporter 5 chiffres');
     }
+    if (!caracalpha($nom)){
+        ajouterErreur('Le Nom doit contenir que des lettres');
+    }
 }
 
 function estUnCp($codePostal) {
     // Le code postal doit comporter 5 chiffres
     return strlen($codePostal) == 5 && estEntier($codePostal);
+}
+
+function caracalpha($nom) {
+            return preg_match('/[^a-zA-Z]/', $nom) !=1;
 }
