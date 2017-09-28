@@ -2,12 +2,11 @@
 
 .menus 
 {
-    font:12px "Comic Sans MS", "Times New Roman", Times, serif;
+    font:12px Arial, Helvetica, sans-serif;
     /* list-style-type est à préciser impérativement sinon l'onglet actif est 
     marqué d'un point avec certains navigateurs (ex : FireFox) */
     list-style-type:none;
     /* Il est impératif de mettre une marge gauche négative sinon décalage */ 
-    margin-left:-40px;
     text-align:center;
 }
 
@@ -16,13 +15,13 @@
 {
     /* Fond vert pâle (c'est la couleur de fond de l'onglet ouvert) 
     Ce fond sera recouvert par un Fond vert pour les onglets fermés */
-    background-color:#DDFF88;
+    background-color:#BABABA;
     /* Couleur rouge */
-    color:#F50033;
+    color:#5F5F5F;
     float:left;
     margin:0px 0px 0px 0px;
     /* Bordure blanche */
-    border:solid 2px white;
+    border:solid 1px #939393;
     /* Logiquement, le pourcentage devrait être égal à 100/nombre d'onglets 
     mais les bordures prennent de la place ; il faut donc réduire à 18% 
     certains navigateurs n'acceptent pas les nombres réels donc on met
@@ -37,7 +36,7 @@
 { 
     /* Effacement du trait inférieur (pour cela, on le met de la même couleur que
     le fond de la page) */
-    border-bottom:solid 2px #DDFF88;
+    border-bottom:solid 2px #BABABA;
     width:20%;
 }
 
@@ -46,8 +45,8 @@
 { 
     /* Effacement du trait inférieur et du trait de gauche (pour cela, on les met 
     de la même couleur que le fond de la page) */
-    border-bottom:solid 2px #DDFF88;
-    border-left:solid 2px #DDFF88;
+    border-bottom:solid 2px #BABABA;
+    border-left:solid 2px #BABABA;
     width:20%;
 }
 
@@ -55,9 +54,9 @@
 .menus .ongletPrem 
 { 
     /* Fond vert */
-    background-color:#CCFF50;
+    background-color:#AAA;
     /* Couleur rouge */
-    color:#F50033;
+    color:#FFF;
     margin:0px 0px 0px 0px;
 }
 
@@ -65,9 +64,9 @@
 .menus .ongletPrem a 
 { 
     /* Fond vert */
-    background-color:#CCFF50;
+    background-color:#AAA;
     /* Couleur rouge */
-    color:#F50033;
+    color:#FFF;
     /* Pas de soulignement du lien */
     text-decoration:none;
 }
@@ -76,22 +75,22 @@
 .menus .onglet 
 { 
     /* Fond vert */
-    background-color:#CCFF50;
+    background-color:#AAA;
     /* Couleur rouge */
-    color:#F50033;
+    color:#FFF;
     margin:0px 0px 0px 0px;
     /* Effacement du trait de gauche (pour cela, on le met de la même couleur que 
     le fond de l'onglet) */
-    border-left:solid 2px #CCFF50;
+    border-left:solid 2px #AAA;
 }
 
 /* Style du lien d'un onglet non ouvert cas autres onglets que le 1er */
 .menus .onglet a 
 { 
     /* Fond vert */
-    background-color:#CCFF50;
+    background-color:#AAA;
     /* Couleur rouge */
-    color:#F50033;
+    color:#FFF;
     /* Pas de soulignement du lien */
     text-decoration:none; 
 }

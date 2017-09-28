@@ -3,16 +3,19 @@
 /* Style de base pour la page (couleur fond : vert pâle, couleur texte : noir) */
 .basePage 
 {
-    background-color:#DDFF88;
-    color:black;
+    background-color:#BABABA;
+    color:#5f5f5f;
     font:11px Arial, Helvetica, sans-serif;
+}
+a {
+    color : #5f5f5f;
 }
 
 /* Style pour le titre (couleur du texte : rouge) */
 .titre 
 {
-    background-color:#DDFF88;
-    color:#F50033;
+    background-color:#BABABA;
+    color:#FFF;
     font:30px Arial, Helvetica, sans-serif;
     text-align:center;
 }
@@ -27,9 +30,9 @@
 mise en gras et en italique) */
 .texteAccueil
 {
-    background-color:#DDFF88;
-    color:#000099;       
-    font:14px Georgia, "Times New Roman", Times, serif;
+    background-color:#BABABA;
+    color:#5f5f5f;       
+    font:14px Arial, Helvetica, sans-serif;
     font-weight:bold;
     font-style:italic;
     text-align:left;
@@ -58,9 +61,8 @@ table.tabQuadrille td
 de jaune */
 tr.enTeteTabQuad 
 {
-    background-image:url('../images/xpBarre.jpg');
-    background-color:#FFFFC0;
-    color:black;
+    background-color:#9B9B9B;
+    color:#d2d2d2;;
     height:21px;
     text-align:center;
 } 
@@ -68,8 +70,8 @@ tr.enTeteTabQuad
 /* 2ème style pour les en-têtes des tableaux quadrillés : fond jaune */
 tr.enTete2TabQuad 
 {
-    background-color:#FFFFC0;
-    color:black;
+    background-color:#A8A8A8;
+    color:#636363;
     text-align:left;
 } 
 
@@ -77,8 +79,8 @@ tr.enTete2TabQuad
 fond écru */
 tr.ligneTabQuad 
 {
-    background-color:#FFFFE0;
-    color:black;
+    background-color:#C5C5C5;
+    color:#5f5f5f;
     text-align:left;
 }
 
@@ -88,7 +90,7 @@ tr.ligneTabQuad
 table.tabNonQuadrille 
 {
     background-color:#FFFFC0;
-    color:black;
+    color:#5f5f5f;
     border-bottom:1px solid #777777;
     border-right:1px solid #777777;
     border-left:1px solid #777777;
@@ -99,9 +101,8 @@ table.tabNonQuadrille
 nuances de jaune et trait bas pour séparer l'en-tête du corps du tableau */
 tr.enTeteTabNonQuad td
 {
-    background-image:url('../images/xpBarre.jpg');
-    background-color:#FFFFC0;
-    color:black;
+    background-color:#9B9B9B;
+    color:#d1d1d1;
     height:21px;
     text-align:center;
     border-bottom:1px solid #777777;
@@ -112,8 +113,8 @@ fond écru, hauteur plus importante et espacement de 3px entre la bordure gauche
 de chaque cellule et le texte */
 tr.ligneTabNonQuad td
 {
-    background-color:#FFFFE0;
-    color:black;
+    background-color:#C5C5C5;
+    color:#5f5f5f;
     text-align:left;
     height:28px;
     padding-left:3px;
@@ -124,7 +125,7 @@ tr.ligneTabNonQuad td
 /* Style pour les messages d'erreur affichés en bas de page (couleur : bleu) */
 .msgErreur
 {
-    background-color:#DDFF88;
+    background-color:#BABABA;
     color:#3366CC;
     font-size:14px;
 }

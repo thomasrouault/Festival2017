@@ -16,6 +16,7 @@
                 <td class="titre">Festival Folklores du Monde <br>
                     <span id="texteNiveau2" class="texteNiveau2">
                         H&eacute;bergement des groupes</span><br>&nbsp;
+                        <img src="images/hotel.png" width="50px" height="50px">
                 </td>
             </tr>
             <!-- Menus -->
