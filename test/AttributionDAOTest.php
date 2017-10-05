@@ -86,28 +86,28 @@ require_once __DIR__ . '/../includes/autoload.php';
             echo "<h4>*** échec de la requête ***</h4>" . $e->getMessage();
         }
 
-        // Test n°7
-        echo "<h3>7- update</h3>";
-        $idEtab = '0350773A';
-        $idTypeCh = 'C2';
-        $idGroupe = 'g005';
-        $newNb = 10;
-        try {
-            $ok = AttributionDAO::update($idEtab, $idTypeCh, $idGroupe, $newNb);
-            if ($ok) {
-                $objetLu = AttributionDAO::getOneById($idEtab, $idTypeCh, $idGroupe);
-                if ($objetLu->getNbChambres() == $newNb) {
-                    echo "<h4>ooo réussite de la mise à jour ooo</h4>";
-                    var_dump($objetLu);
-                } else {
-                    echo "<h4>*** échec de la mise à jour, le nombre de chambres n'est pas le bon ***</h4>";
-                }
-            } else {
-                echo "<h4>*** échec de la mise à jour, erreur DAO ***</h4>";
-            }
-        } catch (Exception $e) {
-            echo "<h4>*** échec de la requête, erreur PDO ***</h4>" . $e->getMessage();
-        }
+//        // Test n°7
+//        echo "<h3>7- update</h3>";
+//        $idEtab = '0350773A';
+//        $idTypeCh = 'C2';
+//        $idGroupe = 'g005';
+//        $newNb = 10;
+//        try {
+//            $ok = AttributionDAO::update($idEtab, $idTypeCh, $idGroupe, $newNb);
+//            if ($ok) {
+//                $objetLu = AttributionDAO::getOneById($idEtab, $idTypeCh, $idGroupe);
+//                if ($objetLu->getNbChambres() == $newNb) {
+//                    echo "<h4>ooo réussite de la mise à jour ooo</h4>";
+//                    var_dump($objetLu);
+//                } else {
+//                    echo "<h4>*** échec de la mise à jour, le nombre de chambres n'est pas le bon ***</h4>";
+//                }
+//            } else {
+//                echo "<h4>*** échec de la mise à jour, erreur DAO ***</h4>";
+//            }
+//        } catch (Exception $e) {
+//            echo "<h4>*** échec de la requête, erreur PDO ***</h4>" . $e->getMessage();
+//        }
 
         // Test n°8
         echo "<h3>8- delete</h3>";
@@ -122,6 +122,12 @@ require_once __DIR__ . '/../includes/autoload.php';
             echo "<h4>*** échec de la requête ***</h4>" . $e->getMessage();
         }
 
+        //Test n°9
+        echo "<h3>9- getAllByIdGp</h3>";
+        $idGp = 'g002';
+        $lesObjets = AttributionDAO::getAllByIdGp($idGp);
+        var_dump($lesObjets);
+        
         Bdd::deconnecter();
         ?>
 
