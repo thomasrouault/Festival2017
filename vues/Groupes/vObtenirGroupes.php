@@ -30,26 +30,26 @@ require_once __DIR__ . '/../../includes/autoload.php';
             echo "
       <tr class='ligneTabNonQuad'> 
          <td width='15%'>$id</td>
-         <td width='33%'>$nom</td>
+         <td width='33%'>$nom</td>"
          
-         <td width='26%' align='center'>
+        ;
+//            <td width='26%' align='center'>
+//            <a href='cGestionGroupes.php?action=detailGp&id=$id'>
+//         Modifier</a>
          
-         <a href='cGestionGroupes.php?action=detailGp&id=$id'>
-         Modifier</a>
-         ";
 
             // S'il existe déjà des attributions pour le groupe, il faudra
             // d'abord les supprimer avant de pouvoir supprimer le groupe
 //    if (!existeAttributionsGroupe($connexion, $id)) {
-            $lesAttributionsDeCeGroupe = AttributionDAO::getAllByIdGp($id);
-            if (count ($lesAttributionsDeCeGroupe) == 0) {
-                echo "
-            <td width='26%' align='center'>
-            <a href='cGestionGroupes.php?action=demanderSupprimerGp&id=$id'>
-            Supprimer</a></td>";
-            } else {
-                echo "<td width='26%'>&nbsp; </td>";
-            }
+//            $lesAttributionsDeCeGroupe = AttributionDAO::getAllByIdGp($id);
+//            if (count ($lesAttributionsDeCeGroupe) == 0) {
+//                echo "
+//            <td width='26%' align='center'>
+//            <a href='cGestionGroupes.php?action=demanderSupprimerGp&id=$id'>
+//            Supprimer</a></td>";
+//            } else {
+//                echo "<td width='26%'>&nbsp; </td>";
+//            }
             echo "               
     </tr>";
         }
