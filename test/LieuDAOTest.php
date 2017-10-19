@@ -28,23 +28,6 @@ require_once __DIR__ . '/../includes/autoload.php';
             echo "<h4>*** échec de la requête ***</h4>" . $ex->getMessage();
         }
 
-        // Test n°2
-        echo "<h3>Test getAll</h3>";
-        try {
-            $lesObjets = LieuDAO::getAll();
-            var_dump($lesObjets);
-        } catch (Exception $ex) {
-            echo "<h4>*** échec de la requête ***</h4>" . $ex->getMessage();
-        }
-
-        // Test n°3
-        echo "<h3>Test getAllToHost</h3>";
-        try {
-            $lesObjets = LieuDAO::getAllToHost();
-            var_dump($lesObjets);
-        } catch (Exception $ex) {
-            echo "<h4>*** échec de la requête ***</h4>" . $ex->getMessage();
-        }
 
         Bdd::deconnecter();
         ?>
