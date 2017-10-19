@@ -14,7 +14,7 @@ class LieuDAO {
         $nomLieu = $enreg['NOM'];
         $adresseLieu = $enreg['ADR'];
         $capaciteaccueil = $enreg['CAPACITE'];
-        $unLieu = new Groupe($id, $nomLieu, $adresseLieu, $capaciteaccueil);
+        $unLieu = new Lieu($id, $nomLieu, $adresseLieu, $capaciteaccueil);
 
         return $unLieu;
     }

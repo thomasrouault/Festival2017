@@ -11,7 +11,7 @@ class Lieu {
 
     /**
      * identifiant du groupe ("gxxx")
-     * @var string
+     * @var int
      */
     private $id;
 
@@ -30,7 +30,7 @@ class Lieu {
 
     /**
      * effectif du groupe
-     * @var integer
+     * @var int
      */
     private $capaciteaccueil;
 
