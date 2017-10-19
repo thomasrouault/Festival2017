@@ -10,10 +10,10 @@ class LieuDAO {
 
 
     protected static function enregVersMetier(array $enreg) {
-        $id = $enreg['id'];
-        $nomLieu = $enreg['nom'];
-        $adresseLieu = $enreg['adr'];
-        $capaciteaccueil = $enreg['capacite'];
+        $id = $enreg['ID'];
+        $nomLieu = $enreg['NOM'];
+        $adresseLieu = $enreg['ADR'];
+        $capaciteaccueil = $enreg['CAPACITE'];
         $unLieu = new Groupe($id, $nomLieu, $adresseLieu, $capaciteaccueil);
 
         return $unLieu;
@@ -38,7 +38,7 @@ class LieuDAO {
  
     public static function getOneById($id) {
         $objetConstruit = null;
-        $requete = "SELECT * FROM Lieu WHERE id = :id";
+        $requete = "SELECT * FROM Lieu WHERE ID = :id";
         $stmt = Bdd::getPdo()->prepare($requete);
         $stmt->bindParam(':id', $id);
         $ok = $stmt->execute();
