@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Test Lieu</title>
+        <title>Lieu Test</title>
     </head>
     <body>
         <?php
