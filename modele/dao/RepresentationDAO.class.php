@@ -10,12 +10,12 @@ class RepresentationDAO {
 
     
     protected static function enregVersMetier(array $enreg) {
-        $id = $enreg['ID'];
-        $idLieu = $enreg['IDLIEU'];
-        $idGroupe = $enreg['IDGROUPE'];
-        $dateRep = $enreg['DATEREP'];
-        $heureDebut = $enreg['HEUREDEBUT'];
-        $heureFin = $enreg['HEUREFIN'];
+        $id = $enreg['ID_REP'];
+        $idLieu = $enreg['ID_LIEU'];
+        $idGroupe = $enreg['ID_GROUPE'];
+        $dateRep = $enreg['DATE_REP'];
+        $heureDebut = $enreg['HEURE_DEB'];
+        $heureFin = $enreg['HEURE_FIN'];
        
         $objetLieu = LieuDAO::getOneById($idLieu);
         $objetGroupe = GroupeDAO::getOneById($idGroupe);
@@ -34,7 +34,7 @@ class RepresentationDAO {
         $stmt->bindValue(':heuredebut', $uneRepresentation->getHeureDebut());
         $stmt->bindValue(':heurefin', $uneRepresentation->getHeureFin());
     }
- 
+    
     public static function getAll() {
         $lesObjets = array();
         $requete = "SELECT * FROM Representation";
@@ -52,7 +52,7 @@ class RepresentationDAO {
 
     public static function getOneById($id) {
         $objetConstruit = null;
-        $requete = "SELECT * FROM Representation WHERE id = :id";
+        $requete = "SELECT * FROM Representation WHERE ID_REP = :id";
         $stmt = Bdd::getPdo()->prepare($requete);
         $stmt->bindParam(':id', $id);
         $ok = $stmt->execute();
