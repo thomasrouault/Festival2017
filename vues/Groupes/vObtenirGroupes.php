@@ -25,12 +25,12 @@ require_once __DIR__ . '/../../includes/autoload.php';
         $lesGroupes = GroupeDAO::getAll();
 
         foreach ($lesGroupes as $unGroupe) {
-            $id = $unGroupe->getId();
+            //$id = $unGroupe->getId();
             $nom = $unGroupe->getNom();
             echo "
       <tr class='ligneTabNonQuad'> 
-         <td width='15%'>$id</td>
-         <td width='33%'>$nom</td>"
+         
+         <td width='33%'>$nom</td>" // <td width='33%'>$nom</td>" Ligne pour afficher l'id dans la gestion des groupes
          
         ;
 //            <td width='26%' align='center'>
