@@ -28,8 +28,8 @@ class RepresentationDAO {
     protected static function metierVersEnreg(Representation $uneRepresentation, PDOStatement $stmt) {
 
         $stmt->bindValue(':id', $uneRepresentation->getId());
-        $stmt->bindValue(':idlieu', $uneRepresentation->getLeLieu());
-        $stmt->bindValue(':idgroupe', $uneRepresentation->getLeGroupe());
+        $stmt->bindValue(':idlieu', $uneRepresentation->getIdLieu());
+        $stmt->bindValue(':idgroupe', $uneRepresentation->getIdGroupe());
         $stmt->bindValue(':daterep', $uneRepresentation->getDateRep());
         $stmt->bindValue(':heuredebut', $uneRepresentation->getHeureDebut());
         $stmt->bindValue(':heurefin', $uneRepresentation->getHeureFin());
