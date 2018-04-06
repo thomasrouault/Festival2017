@@ -7,7 +7,7 @@
     <body>
         <h1>Festival</h1>
         <form id="blocLogin" action="cLogin.php" method="post">
-            <input type="text" name="login" class="sign-up-input" placeholder="Login"><br />
+            <input type="text" name="login" class="sign-up-input" placeholder="Nom d'utilisateur"><br />
             <input type="password" name="pwd" class="sign-up-input" placeholder="Mot de passe"><br />
             <input type="submit" value="Connexion" class="sign-up-button">
         </form>
