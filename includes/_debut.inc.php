@@ -1,3 +1,9 @@
+<?php
+session_start();
+if ($_SESSION['logged'] == FALSE){
+        header('Location: cLogin.php');
+}
+?>
 <!DOCTYPE html">
 <html lang="fr">
     <head>
@@ -17,6 +23,9 @@
                     <span id="texteNiveau2" class="texteNiveau2">
                         H&eacute;bergement des groupes</span><br>&nbsp;
                         <img src="images/hotel.png" width="50px" height="50px">
+            <form id="blocLogin" action="cLogout.php" method="post">
+            <input type="submit" value="Déconnexion" class="sign-up-button">
+        </form>
                 </td>
             </tr>
             <!-- Menus -->

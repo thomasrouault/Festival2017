@@ -3,9 +3,9 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  localhost
--- Généré le :  Lun 18 Décembre 2017 à 14:18
--- Version du serveur :  5.7.19-0ubuntu0.16.04.1
--- Version de PHP :  7.0.22-0ubuntu0.16.04.1
+-- Généré le :  Ven 06 Avril 2018 à 19:43
+-- Version du serveur :  5.7.21-0ubuntu0.16.04.1
+-- Version de PHP :  7.0.28-0ubuntu0.16.04.1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -19,6 +19,8 @@ SET time_zone = "+00:00";
 --
 -- Base de données :  `festival`
 --
+CREATE DATABASE IF NOT EXISTS `festival` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+USE `festival`;
 
 -- --------------------------------------------------------
 
@@ -264,6 +266,29 @@ INSERT INTO `TypeChambre` (`id`, `libelle`) VALUES
 ('C4', '6 à 8 lits'),
 ('C5', '8 à 12 lits');
 
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `Utilisateur`
+--
+
+CREATE TABLE `Utilisateur` (
+  `id` int(11) NOT NULL,
+  `nom` varchar(100) NOT NULL,
+  `prenom` varchar(100) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `login` varchar(100) NOT NULL,
+  `Motdepasse` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Contenu de la table `Utilisateur`
+--
+
+INSERT INTO `Utilisateur` (`id`, `nom`, `prenom`, `email`, `login`, `Motdepasse`) VALUES
+(1, 'rouault', 'thomas', 'throuault@free.fr', 'trouault', '50fa5e71642c7863c027de8976d0fdbb53964d10'),
+(2, 'test', 'test', 'test@free.fr', 'test', '50fa5e71642c7863c027de8976d0fdbb53964d10');
+
 --
 -- Index pour les tables exportées
 --
@@ -314,6 +339,12 @@ ALTER TABLE `TypeChambre`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Index pour la table `Utilisateur`
+--
+ALTER TABLE `Utilisateur`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT pour les tables exportées
 --
 
@@ -322,6 +353,11 @@ ALTER TABLE `TypeChambre`
 --
 ALTER TABLE `Representation`
   MODIFY `id_rep` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
+--
+-- AUTO_INCREMENT pour la table `Utilisateur`
+--
+ALTER TABLE `Utilisateur`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
 -- Contraintes pour les tables exportées
 --
