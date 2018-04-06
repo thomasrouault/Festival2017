@@ -10,9 +10,9 @@
             <input type="text" name="login" class="sign-up-input" placeholder="Login"><br />
             <input type="password" name="pwd" class="sign-up-input" placeholder="Mot de passe"><br />
             <input type="submit" value="Connexion" class="sign-up-button">
-            <form id="blocLogin" action="cLogout.php" method="post">
-                <input type="submit" value="Annuler" class="sign-up-button">
-            </form>
+        </form>
+        <form id="blocLogin2" action="cLogout.php" method="post">
+            <input type="submit" value="Annuler" class="sign-up-button">
         </form>
     </body>
 </html>
