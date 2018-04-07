@@ -11,7 +11,7 @@ Etapes suivantes :
     - Itération 2 : page de consultation des groupes (objectif : se faire la main avec un développement simple)
     - Itération 3 : page de consultation des représentations (objectif : modéliser une association entre classes, mais en évitant les difficultés de codage des fonctionnalités de mise à jour)
     - Itération 4 ou 5 ou 6 au choix en fonction des capacités :
-        - Itération 4 : authentification
-        - Itération 5 : insertion/modification/suppression des groupes
-        - Itération 6 : insertion/modification/suppression des représentations
+        - Itération 4 : insertion/modification/suppression des groupes
+        - Itération 5 : insertion/modification/suppression des représentations
+        - Itération 6 : authentification
 

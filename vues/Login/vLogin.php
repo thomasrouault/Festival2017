@@ -6,6 +6,7 @@
     </head>
     <body>
         <h1>Festival</h1>
+        <img id="imgConnexion" src="images/ImgFestival.jpg" alt="Festival" />
         <form id="blocLogin" action="cLogin.php" method="post">
             <input type="text" name="login" class="sign-up-input" placeholder="Nom d'utilisateur"><br />
             <input type="password" name="pwd" class="sign-up-input" placeholder="Mot de passe"><br />
