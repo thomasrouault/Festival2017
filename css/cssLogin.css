@@ -125,24 +125,10 @@ h1{
     vertical-align:middle;
     background-color: #002b84;
     position: absolute;
-    top: 43%; left: 70%; 
+    top: 50%; left: 70%; 
     transform: translate(-50%, -50%);
     text-align: center;
     border-radius: 10px;
-}
-#blocLogin2{
-    display:inline-block;
-    line-height:1.3em;
-    padding: 2em;
-    vertical-align:middle;
-    background-color: #002b84;
-    position: absolute;
-    top: 62%;
-    left: 70%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    border-radius: 10px;
-    width: 282px;
 }
 #blocLogin>*{
     margin-bottom: 0.5em;
