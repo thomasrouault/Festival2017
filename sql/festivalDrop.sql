@@ -1,1 +1,1 @@
-DROP DATABASE festival1;
+DROP DATABASE festival;

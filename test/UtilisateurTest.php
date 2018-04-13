@@ -9,7 +9,7 @@
         use modele\metier\Utilisateur;
         require_once __DIR__ . '/../includes/autoload.php';
         echo "<h2>Test unitaire de la classe métier Utilisateur</h2>";
-        $objet = new Utilisateur("1", "abc","efg","abcdefg@mopq.com","log","mdp");
+        $objet = new Utilisateur("1", "test","test","test@test.com","log","mdp");
         var_dump($objet);
         ?>
     </body>
