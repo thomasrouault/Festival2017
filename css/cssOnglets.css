@@ -2,7 +2,7 @@
 
 .menus 
 {
-    font:12px Arial, Helvetica, sans-serif;
+    font:15px Arial, Helvetica, sans-serif;
     /* list-style-type est à préciser impérativement sinon l'onglet actif est 
     marqué d'un point avec certains navigateurs (ex : FireFox) */
     list-style-type:none;
@@ -27,7 +27,7 @@
     certains navigateurs n'acceptent pas les nombres réels donc on met
     un nombre entier) mais pour l'onglet actif, on passe à 20% (voir styles 
     ongletOuvertPrem et ongletOuvert) */
-    width:15%;
+    width:13%;
     height:5%;
 }
 
